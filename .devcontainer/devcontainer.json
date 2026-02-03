@@ -8,7 +8,9 @@
       "installMaven": "true",
       "installGradle": "false"
     },
-    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {
+      "moby": false
+    }
   },
   "customizations": {
     "vscode": {
@@ -25,7 +27,7 @@
   //    "vmware.vscode-boot-dev-pack"
   // Additional Extensions Here
   //  ],
-  "onCreateCommand": "sudo rm -f /etc/apt/sources.list.d/yarn.list && echo PS1='\"$ \"' >> ~/.bashrc",
+  "onCreateCommand": "echo PS1='\"$ \"' >> ~/.bashrc",
   "postAttachCommand": "git pull --all"
   // Update welcome text and set terminal prompt to '$ '
 }
