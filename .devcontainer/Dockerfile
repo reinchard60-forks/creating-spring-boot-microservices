@@ -1,5 +1,5 @@
 # Use the same image
-FROM ://mcr.microsoft.com/devcontainers/java:21-bullseye
+FROM mcr.microsoft.com/devcontainers/java:21-bullseye
 
 # Remove the broken Yarn repository that causes the GPG error
 # This must happen BEFORE the devcontainer features run
